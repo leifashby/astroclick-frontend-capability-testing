@@ -1,12 +1,12 @@
 {
-  "name": "Astro-Frontend-Test-App",
+  "name": "astroclick-frontend-capability-testing",
   "version": "0.0.1",
   "description": "",
   "keywords": [],
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thisisamurray/astroFEtestAPP"
+    "url": "https://github.com/astronomerio/astroclick-frontend-capability-testing"
   },
   "scripts": {
     "start": "webpack-dev-server --inline --hot --history-api-fallback --host localhost --port 8080",
@@ -22,8 +22,8 @@
       "stage-3"
     ]
   },
-  "author": "Catalin Luntraru",
-  "license": "MIT",
+  "author": "",
+  "license": "",
   "dependencies": {
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
