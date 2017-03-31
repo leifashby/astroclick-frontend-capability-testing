@@ -1,9 +1,7 @@
-import App from './App';
-import Home from './Home';
-import NotFound from './NotFound';
+import App from './App.js';
+import NotFound from './NotFound.js';
 
 export {
   App,
-  Home,
   NotFound
 }
