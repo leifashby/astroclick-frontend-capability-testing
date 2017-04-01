@@ -10,8 +10,8 @@ class Test2 extends React.Component {
   render () {
     return (
       <div>
-        <h1>Test 2</h1>
-        <Link to="/">Return</Link>
+        <h1>Test 2 - Using Redux</h1>
+        <Link to="/">Go Home</Link>
       </div>
     );
   }
