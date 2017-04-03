@@ -1,12 +1,12 @@
 # Astronomer Front End Testing Application
 
-# Getting Started
+## Getting Started
 1 - Fork and clone this repo
 2 - Run `npm install`
 3 - Run `npm start`
 4 - Once Webpack has finished building, the app will be available at **localhost:8080**
 
-# Complete the Included Tests
+## Complete the Included Tests
 * Test 1 - React Components
 * Test 2 - Using Redux
 * Test 3 - Mapping from API's (Optional)
