@@ -19,12 +19,13 @@ class Test2 extends React.Component {
         <h1>Test 2 - Using Redux</h1>
         <Link to="/">Go Home</Link>
         <div>
-          <h1>Counter: {this.props.counter}</h1>
-          <p>Task 1: Using actions and reducers, add to the existing counter functionality to:</p>
+          <h1>Task 1</h1>
+          <p>Using actions and reducers, add to the existing counter functionality to:</p>
           <ol>
             <li>Prevent the counter from going below 0 and above 99</li>
             <li>Hook up a button to reset the counter to it's initialized state</li>
           </ol>
+          <h4>Counter: {this.props.counter}</h4>
           <span>
             <label>Counter Controls </label>
             <button onClick={this.props.down.bind(this)}>-</button>
@@ -32,15 +33,16 @@ class Test2 extends React.Component {
             <button onClick={this.props.up.bind(this)}>+</button>
           </span>
         </div>
+        <hr />
         <div>
-          <h1>Categories: </h1>
+          <h1>Task 2</h1>
           <p>Using the existing actions/CategoryActions.js and reducers/CategoryReducer.js file</p>
           <ol>
             <li>Add the ability to add and remove a single specific category</li>
             <li>Hook up the existing form to add a category, and to clear out the form when it is submitted</li>
             <li>Hook up ability to click on a category name to remove it</li>
           </ol>
-          <hr />
+          <b>Categories: </b>
           {this.props.categories.map((cat, i) => {
             return <p key={i}>{cat}</p>
           })}
