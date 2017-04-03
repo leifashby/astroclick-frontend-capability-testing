@@ -1,14 +1,14 @@
 # Astronomer Front End Testing Application
 
-# Getting started
-1 - Clone this app
+# Getting Started
+1 - Fork and clone this repo
 2 - Run `npm install`
 3 - Run `npm start`
-4 - Once Webpack has finished building, the app will be available at localhost:8080
+4 - Once Webpack has finished building, the app will be available at **localhost:8080**
 
-# Testing pages
-*/container2component*: Breaking apart a container into container > components
-*/jsx*: Basic demonstration of JSX usage (Read: props and stuff)
-*/actionReducer*: Creation and hookup of a Action/Reducer into Redux store
-*/externalData*: Hook up into an API and display the data
-*/routing*: Show how well you know the routing component
+# Complete the Included Tests
+* Test 1 - React Components
+* Test 2 - Using Redux
+* Test 3 - Mapping from API's (Optional)
+
+When you are finished, please commit all changes to your fork, and send to Greg Brunk at greg.brunk@gmail.com.
