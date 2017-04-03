@@ -16,35 +16,37 @@ class Test2 extends React.Component {
   render () {
     return (
       <div>
-        <h1>Test 2 - Using Redux</h1>
+        <h2>Test 2 - Using Redux</h2>
+          <h5>This test is designed to test your knowledge of redux props, actions, and reducers.</h5>
         <Link to="/">Go Home</Link>
-        <div>
-          <h1>Task 1</h1>
-          <p>Using actions and reducers, add to the existing counter functionality to:</p>
+        
+        <div className="body">
+          <h3>Task 1</h3>
+          <p>Using actions and reducers, add the following functionality to the existing counter:</p>
           <ol>
             <li>Prevent the counter from going below 0 and above 99</li>
-            <li>Hook up a button to reset the counter to it's initialized state</li>
+            <li>Hook up the button to reset the counter to it's initialized state</li>
           </ol>
-          <h4>Counter: {this.props.counter}</h4>
           <span>
-            <label>Counter Controls </label>
+            <label>Counter Controls &nbsp;</label>
             <button onClick={this.props.down.bind(this)}>-</button>
             <button>RESET</button>
             <button onClick={this.props.up.bind(this)}>+</button>
           </span>
+          <h4>Count: {this.props.counter}</h4>
         </div>
-        <hr />
-        <div>
-          <h1>Task 2</h1>
-          <p>Using the existing actions/CategoryActions.js and reducers/CategoryReducer.js file</p>
+        <div className="body">
+          <h3>Task 2</h3>
+          <p>Using the existing actions/CategoryActions.js and reducers/CategoryReducer.js file, please do the following:</p>
           <ol>
-            <li>Add the ability to add and remove a single specific category</li>
-            <li>Hook up the existing form to add a category, and to clear out the form when it is submitted</li>
-            <li>Hook up ability to click on a category name to remove it</li>
+            <li>Add the functionality to add and remove a single specific category</li>
+            <li>Hook up your new "add" functionality to the existing form, and clear out the form on submission</li>
+            <li>Hook up your new "remove" functionality to the existing list, by allowing users to click on a category name to remove it</li>
           </ol>
-          <b>Categories: </b>
+          <br />
+          <h4>Categories: </h4>
           {this.props.categories.map((cat, i) => {
-            return <p key={i}>{cat}</p>
+            return <p key={i}> - {cat}</p>
           })}
           <div>
             <form onSubmit={this.submitCategoryForm.bind(this)}>
@@ -52,7 +54,6 @@ class Test2 extends React.Component {
               <button type="submit">Submit</button>
             </form>
           </div>
-          <hr />
         </div>
       </div>
     );

@@ -23,7 +23,8 @@ class Test1 extends React.Component {
       return (
         <div>
           <h1>Test 1 - React Components</h1>
-          <h4>This test is designed to guage your understanding of React Containers and Components, how they are imported and exported, and when they are necessary. The goal is simple, break down the the rendered code within the "Test 1" container into smaller components. Please use the smallest component structure that feels reasonable to you, and be able to defend that decision.</h4>
+          <h5>This test is designed to guage your understanding of React Containers and Components, how they are imported and exported, and when they are necessary.</h5>
+          <h5>The goal is simple, break down the the rendered JSX code within the "Test 1" container into smaller components. Please use the smallest component structure that feels reasonable to you, and be able to defend that decision.</h5>
           <Link to="/">Go Home</Link>
           <div className="body">
             <h4>This is a list of some things</h4>
@@ -57,13 +58,9 @@ class Test1 extends React.Component {
 }
 
 
-Test1.propTypes = {
+Test1.propTypes = {};
 
-};
-
-Test1.defaultProps = {
-
-};
+Test1.defaultProps = {};
 
 export default connect(
   (state) => ({

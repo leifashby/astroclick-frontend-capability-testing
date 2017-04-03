@@ -10,8 +10,8 @@ class Test3 extends React.Component {
   render () {
     return (
       <div>
-        <h1>Test 3 - Mapping and External API's</h1>
-        <h4>This test is designed to test your knowledge of loops in JSX, and your ability to plug into external API's.</h4>
+        <h2>Test 3 - Mapping from APIs</h2>
+        <h5>This test is designed to test your knowledge of loops in JSX and your ability to plug into external API's.</h5>
         <Link to="/">Go Home</Link>
         <div className="body">
           <p>API: Geoquakes: <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson">Link</a></p>
