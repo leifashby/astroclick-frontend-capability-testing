@@ -11,6 +11,7 @@ class Test1 extends React.Component {
 		};
 	}
 	addItem(e) {
+		e.preventDefault();
 		var itemArray = this.state.items;
 		itemArray.push({
 			text: this._inputElement.value
@@ -21,7 +22,6 @@ class Test1 extends React.Component {
 		});
 
 		this._inputElement.value = "";
-		e.preventDefault();
 	}
 	render () {
 	    return (
