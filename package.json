@@ -25,6 +25,8 @@
   "author": "",
   "license": "",
   "dependencies": {
+    "json-loader": "^0.5.4",
+    "moment-timezone": "^0.5.12",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
     "react-dom": "^15.4.2",
