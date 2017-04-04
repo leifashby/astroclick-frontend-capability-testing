@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
 
-import { counterUp, counterDown } from '../../actions/CounterActions';
+import { counterUp, counterDown, counterReset } from '../../actions/CounterActions';
 
 class Test2 extends React.Component {
   constructor(props){
@@ -30,7 +30,7 @@ class Test2 extends React.Component {
           <span>
             <label>Counter Controls &nbsp;</label>
             <button onClick={this.props.down.bind(this)}>-</button>
-            <button>RESET</button>
+            <button onClick={this.props.reset.bind(this)}>RESET</button>
             <button onClick={this.props.up.bind(this)}>+</button>
           </span>
           <h4>Count: {this.props.counter}</h4>
@@ -75,6 +75,7 @@ export default connect(
   }),
   (dispatch) => ({
     up: () => dispatch(counterUp()),
-    down: () => dispatch(counterDown())
+    down: () => dispatch(counterDown()),
+    reset: () => dispatch(counterReset()),
   })
 )(Test2);
