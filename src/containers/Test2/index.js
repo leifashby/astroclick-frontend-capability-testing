@@ -3,7 +3,9 @@ import React from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
 
+import Category from '../../components/Category';
 import { counterUp, counterDown, counterReset } from '../../actions/CounterActions';
+import { categoryAdd } from '../../actions/CategoryActions';
 
 class Test2 extends React.Component {
   constructor(props){
@@ -12,6 +14,8 @@ class Test2 extends React.Component {
   submitCategoryForm(event) {
     event.preventDefault();
     console.log(event.target.name.value);
+    this.props.addCategory(event.target.name.value);
+    event.target.name.value = '';
   }
   render () {
     return (
@@ -46,6 +50,7 @@ class Test2 extends React.Component {
           <br />
           <h4>Categories: </h4>
           {this.props.categories.map((cat, i) => {
+            return <Category key={i} index={i} cat={cat}></Category>
             return <p key={i}> - {cat}</p>
           })}
           <div>
@@ -61,7 +66,7 @@ class Test2 extends React.Component {
 }
 
 Test2.propTypes = {
-
+  categories: React.PropTypes.arrayOf(React.PropTypes.string)
 };
 
 Test2.defaultProps = {
@@ -77,5 +82,6 @@ export default connect(
     up: () => dispatch(counterUp()),
     down: () => dispatch(counterDown()),
     reset: () => dispatch(counterReset()),
+    addCategory: (category) => dispatch(categoryAdd(category))
   })
 )(Test2);
